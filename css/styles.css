@@ -68,7 +68,6 @@ img {
 
 .conteiner {
   width: 1200px;
-  height: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -166,9 +165,9 @@ img {
 
 /* Герой */
 
-.hero .conteiner {
-  padding-top: 106px;
-  padding-bottom: 106px;
+.section.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -281,8 +280,14 @@ img {
   background-color: var(--third-bg-color);
 }
 
-.image {
-  margin-bottom: 30px;
+.team-section .section-header {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
 }
 
 .team-header {
@@ -296,23 +301,12 @@ img {
   color: var(--second-text-color);
 }
 
-.team-section .section-header {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
-}
-
 .team-list {
   display: flex;
 }
 
 .team-list .item {
   width: calc((100% - 3 * 30px) / 4);
-  padding-bottom: 30px;
   margin-right: 30px;
 
   border-radius: 0 0 4px 4px;
@@ -323,6 +317,11 @@ img {
 
 .team-list .item:last-child {
   margin-right: 0;
+}
+
+.description-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-section .text {
