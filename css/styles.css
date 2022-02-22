@@ -179,8 +179,11 @@ img {
 /* Герой */
 
 .section.hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -188,7 +191,7 @@ img {
     ),
     url("../images/bg-img-01.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
+  background-size: cover;
   background-position: center;
 }
 
@@ -445,12 +448,11 @@ img {
 
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 
 .adress-box {
   margin-right: 70px;
-
-  width: 231px;
 }
 
 .footer-logo-color,
@@ -490,13 +492,6 @@ img {
 .item-map,
 .item-mail {
   margin-bottom: 9px;
-}
-
-.social-links-box {
-  padding-top: 12px;
-  padding-bottom: 40px;
-
-  width: 206px;
 }
 
 .social-header {
@@ -590,8 +585,12 @@ img {
   margin-bottom: 30px;
 }
 
-.examples-list .item:hover,
-.examples-list .item:focus {
+.examples-list .link {
+  display: block;
+}
+
+.examples-list .link:hover,
+.examples-list .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
