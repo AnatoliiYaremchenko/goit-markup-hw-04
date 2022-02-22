@@ -239,10 +239,10 @@ img {
 /* Наши преимущества */
 
 .advantages-section .icon-box {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
